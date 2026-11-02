@@ -26,28 +26,32 @@
     <main>
       <section id="catalogo">
         <h2>Mis libros recomendados</h2>
-        <p>Aquí encontrarás algunos de los libros que más me han gustado.</p>
-        <p>
+        <p class="descripcion">
+          Aquí encontrarás algunos de los libros que más me han gustado.
+        </p>
+        <p class="descripcion">
           Cada uno tiene una pequeña descripción para que conozcas de qué trata.
         </p>
 
-        <div class="tarjeta">
+        <div id="tarjeta" class="tarjeta">
           <img
             src="img/principito.jpg"
             alt="Portada de El principito"
             class="portada"
           />
           <h3>El principito</h3>
+          <br>
           <p>Antoine de Saint-Exupéry</p>
+          <br>
           <p>
             Un clasico que nos recuerda la importancia de la amistad y de ver
             más allá de las apariencias.
           </p>
-          <a href="https://es.wikipedia.org/wiki/El_principito" class="boton">
+          <a href="https://es.wikipedia.org/wiki/El_principito" class="boton" id="boton-prin">
             Más información
           </a>
         </div>
-        <div class="tarjeta">
+        <div id="Potter" class="tarjeta">
           <img
             src="img/harry-potter.jpg"
             alt="Portada de harry-potter"
@@ -58,11 +62,11 @@
           <p>
             El comienzo de una nueva aventura llena de magia, amistad y grandes sorpresas.
           </p>
-          <a href="https://es.wikipedia.org/wiki/Harry_Potter_y_la_piedra_filosofal" class="boton">
+          <a href="https://es.wikipedia.org/wiki/Harry_Potter_y_la_piedra_filosofal" class="boton" id="boton-hp">
             Más información
           </a>
         </div>
-        <div class="tarjeta">
+        <div id="Interminable" class="tarjeta">
           <img
             src="img/historia-interminable.jpg"
             alt="Portada de La historia interminable"
@@ -73,20 +77,22 @@
           <p>
             Un viaje fascinante a un mundo de fantasía donde la imagianción no tiene límites.
           </p>
-          <a href="https://es.wikipedia.org/wiki/La_historia_interminable" class="boton">
+          <a href="https://es.wikipedia.org/wiki/La_historia_interminable" class="boton" id="boton-hi">
             Más información
           </a>
         </div>
       </section>
-      <section id="otros-libros">
+      <section id="otros-libros"><strong>
         <h2>Otros libros que también te pueden gustar</h2>
         <ul>
+          
             <li>Momo - Michael Ende</li>
             <li>Las crónicas de Narnia - C. S. Lewis</li>
             <li>Matilda - Roal Dahl</li>
             <li>El Hoobit - J. R. R. Tolkien</li>
             <li>El nombre del viento - Patrick Rothfuss</li>
         </ul>
+      </strong>
       </section>
     </main>
 
