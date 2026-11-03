@@ -72,13 +72,17 @@ nav a {
     padding: 8px;
 }
 
+nav a:focus {
+    outline: 3px solid yellow;
+}
+
 nav a:hover {
     background-color: #1976b9;
     border-radius: 5px;
 }
 
 nav a.activo {
-    background-color: #1976b9;
+    background-color: #57e793;
     border-radius: 5px;
 }
 
@@ -154,6 +158,8 @@ nav a.activo {
     color: #263c59;
 }
 
+
+
 #avent {
     background-color: #f1f1ec;
 }
@@ -168,6 +174,10 @@ nav a.activo {
 
 #mist {
     background-color: #f3ece5;
+}
+
+#generos:hover {
+    background-color: #8d058d;
 }
 .aventura {
     width: 85%;
@@ -276,14 +286,29 @@ nav a.activo {
     border: 1px solid #87bce2;
 }
 
+#tarjeta:hover {
+    border-radius: 25px;
+    border: 2px solid #1ba0b8;
+}
+
 #Potter {
     background-color: #f6ebfce3;
     border: 1px solid #d6aeeee3;
 }
 
+#Potter:hover {
+    border-radius: 25px;
+    border: 2px solid #240691e3;
+}
+
 #Interminable {
     background-color: #eff8ef;
     border: 1px solid #82db8e;
+}
+
+#Interminable:hover {    
+    border-radius: 25px;
+    border: 2px solid #0f7c1d;
 }
 
 #tarjeta p {
@@ -305,6 +330,20 @@ nav a.activo {
 #boton-hi {
     background-color: #2e973c;
 }
+
+#boton-hp:active {
+    background-color: red;
+    
+}
+
+#boton-prin:active {
+    background-color: red;
+}
+
+#boton-hi:active {
+    background-color: red;
+}
+
 
 /* OTROS LIBROS */
 
@@ -328,6 +367,31 @@ nav a.activo {
     margin: 8px;
 }
 
+#otros-libros li:first-child {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#otros-libros li:last-child {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#otros-libros li:nth-child(even) {
+    background-color: lightgray;
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+} 
+
+#otros-libros li:nth-child(3) {    
+    font-size: 20px;
+}
+
 footer { 
     display: flex;
     background-color: #263c59;
@@ -342,3 +406,8 @@ footer a {
     text-decoration: none;
     color: white;
 }
+
+#contenedor a:visited {
+    color: red;
+}
+
