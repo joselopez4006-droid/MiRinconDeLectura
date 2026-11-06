@@ -145,7 +145,12 @@ nav a.activo {
     margin: 3%;
     padding: 15px;
     border: 1px solid #c5d8eb;
-    border-radius: 13px;
+    border-radius: 13px; 
+    transition: transform 0.4s;
+}
+
+.genero:hover {
+    transform: translateY(-15px);
 }
 
 #generos h2 {
@@ -222,6 +227,12 @@ nav a.activo {
 .portada {
     width: 22%;
     border-radius: 8px;
+    transition: transform 5s;
+} 
+
+.portada:hover {
+    transform: scale(1.05) translateY(-15px);
+    border: 2px solid greenyellow;
 }
 
 .cita {
@@ -266,6 +277,12 @@ nav a.activo {
     padding: 15px;
     margin: 8px;
     text-align: center;
+    box-shadow: 0 2px 5px #000 0.1;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.tarjeta:hover {
+    transform:  translateY(-10);
 }
 
 .tarjeta img {
@@ -318,7 +335,7 @@ nav a.activo {
     
 }
 
-#boton-hp {
+/*#boton-hp {
     background-color: #a137dfe3;
     
 }
@@ -329,7 +346,7 @@ nav a.activo {
 
 #boton-hi {
     background-color: #2e973c;
-}
+}*/
 
 #boton-hp:active {
     background-color: red;
@@ -343,7 +360,13 @@ nav a.activo {
 #boton-hi:active {
     background-color: red;
 }
-
+ .boton {
+    transition: transform 0.3s, background-color 0.3s;
+ }
+.boton:hover {
+    transform: scale(0.9);
+    background-color: green;
+}
 
 /* OTROS LIBROS */
 
@@ -411,3 +434,93 @@ footer a {
     color: red;
 }
 
+/*@keyframes cambiarcolor {
+    0% {
+        color: blue;
+    }
+    30% {
+        color: lightseagreen;
+    }
+    65% {
+        color: red
+    }
+    90% {
+        color: lightseagreen;
+    }
+    100% {
+        color: blue;
+    }
+}
+h1 {
+    animation: cambiarcolor 3s 13 2;
+}*/
+
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+.tarjeta {
+    animation: mover 5s ease-out;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+.iniciodos {
+    animation: aparecer 4s;
+}
+
+@keyframes palpita {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.1);
+    }    
+    75% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+} 
+.iniciodos {
+    animation: palpita 2s infinite;
+    
+}
+
+@keyframes titulo {
+    from {opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: titulo 1s 2s backwards;
+}
+
+ @keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+ }
+ .portada {
+    animation: girar 3s;
+ }
+ 
